@@ -1,0 +1,115 @@
+<section class="bg-gray-50 dark:bg-gray-900">
+                <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+                    {/* <a href="#" class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
+                        <img class="w-8 h-8 mr-2" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/logo.svg" alt="logo" />
+                        Gummy dev
+                    </a> */}
+                    <div class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
+                        <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+                            <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
+                                สมัครสมาชิก
+                            </h1>
+                            <form class="space-y-4 md:space-y-6" action="#">
+
+                                <div class="">
+                                    {/* Email */}
+                                    <div>
+                                        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">เลขบัตรประจำตัวประชาชน (ID card)
+                                            <span style={{ color: "red" }}> *</span></label>
+                                        <input type="text" name="id-card" id="id-card"
+                                            class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="เลขบัตรประจำตัวประชาชน (ID card)" required="" />
+                                    </div>
+
+                                    <div className='mt-6'>
+                                        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">คำนำหน้าชื่อ
+                                            <span style={{ color: "red" }}> *</span></label>
+                                    </div>
+                                    {/* คำนำหน้าชื่อ */}
+                                    <div class="flex mb-6" >
+
+                                        <div class="flex items-center mr-4">
+                                            <input id="inline-radio" type="radio" value="" name="inline-radio-group" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
+                                            <label for="inline-radio" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">นาย</label>
+                                        </div>
+                                        <div class="flex items-center mr-4">
+                                            <input id="inline-radio" type="radio" value="" name="inline-radio-group" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
+                                            <label for="inline-radio" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">นางสาว</label>
+                                        </div>
+                                        <div class="flex items-center mr-4">
+                                            <input id="inline-radio" type="radio" value="" name="inline-radio-group" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
+                                            <label for="inline-radio" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">นาง</label>
+                                        </div>
+
+                                        <div class="flex items-center mr-4">
+                                            <input id="inline-radio" type="radio" value="" name="inline-radio-group" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
+                                            <label for="inline-radio" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">อื่นๆ</label>
+                                        </div>
+                                    </div>
+
+
+
+
+                                    {/* Name or ชื่อ */}
+                                    <div className='mb-6'>
+                                        <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">ชื่อ
+                                            <span style={{ color: "red" }}> *</span></label>
+                                        <input type="text" name="name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="ชื่อ" required="" />
+                                    </div>
+
+
+                                    {/* Lastname or นามสกุล */}
+                                    <div className='mb-6'>
+                                        <label for="lastname" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">นามสกุล
+                                            <span style={{ color: "red" }}> *</span></label>
+                                        <input type="lastname" name="lastname" id="lastname" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="นามสกุล" required="" />
+                                    </div>
+
+                                    <div className='grid grid-rows-2 grid-flow-col gap-4'>
+
+                                    </div>
+
+                                    {/* จังหวัด */}
+                                    <div class="mb-6">
+                                        <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">จังหวัดที่ทำการออกบัตรประชาชน
+                                            <span style={{ color: "red" }}> *</span></label>
+                                        <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                            <option selected>กรุณาเลือกจังหวัด</option>
+                                            <option>sadada</option>
+                                        </select>
+                                    </div>
+
+
+
+                                    {/* This is a password 1 */}
+                                    <div className='mb-6'>
+                                        <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">รหัสผ่าน</label>
+                                        <input type="password" name="password" id="password" placeholder="••••••••" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required="" />
+                                    </div>
+
+
+
+                                    {/* This is a password 2 */}
+                                    <div className='mb-6'>
+                                        <label for="confirm-password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">ยืนยันรหัสผ่าน</label>
+                                        <input type="confirm-password" name="confirm-password" id="confirm-password" placeholder="••••••••" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required="" />
+                                    </div>
+
+                                </div>
+
+                                {/* Btn for Creating account */}
+                                <button type="submit" class="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Create an account</button>
+
+
+
+                                {/* Link to login page */}
+                                <p class="text-sm font-light text-gray-500 dark:text-gray-400">
+                                    Already have an account?
+                                    <a href="#" class="font-medium text-primary-600 hover:underline dark:text-primary-500">
+                                        <Link to="/login"> Login here </Link>
+                                    </a>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>

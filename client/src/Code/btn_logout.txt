@@ -1,0 +1,39 @@
+//For mui of tailwind css
+    const [open, setOpen] = useState(false);
+ 
+    const handleOpen = () => setOpen(!open);
+
+
+
+                    <button onClick={handleOpen} class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
+                        <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                            ออกจากระบบ
+                        </span>
+                    </button>
+
+                    <Dialog open={open} handler={handleOpen}>
+                        <DialogHeader style={{ display: 'flex', justifyContent: 'center' }}>คุณต้องการออกจากระบบหรือไม่</DialogHeader>
+                        <DialogBody divider>
+
+                        </DialogBody>
+                        <DialogFooter>
+                            <Button
+                                variant="text"
+                                style={{ color: "red" }}
+                                onClick={handleOpen}
+                                className="mr-1"
+                            >
+                                <span>ยกเลิก</span>
+                            </Button>
+                            <Button variant="gradient" style={{ backgroundColor: "green" }} onClick={handleLogout}>
+                                <span>ออกจากระบบ</span>
+                            </Button>
+                        </DialogFooter>
+                    </Dialog>
+
+
+
+                    <button data-collapse-toggle="navbar-cta" type="button" className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-cta" aria-expanded="false">
+                        <span className="sr-only">Open main menu</span>
+                        <svg className="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                    </button>

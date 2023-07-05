@@ -1,0 +1,52 @@
+<MDBBadge style={{ marginRight: "38px" }} color='success' pill>รับการอนุมัติแล้ว</MDBBadge>                                             
+
+
+
+                                                    <MDBBtn className='btn-danger' onClick={toggleShow_2}>ยกเลิกการอนุมัติสิทธิ</MDBBtn>
+                                                    <MDBModal staticBackdrop tabIndex='-1' show={staticModal_2} setShow={setStaticModal_2}>
+                                                        <MDBModalDialog>
+                                                            <MDBModalContent>
+                                                                <MDBModalHeader>
+                                                                    <MDBBtn className='btn-close' color='none' onClick={toggleShow_2}></MDBBtn>
+                                                                </MDBModalHeader>
+                                                                <MDBModalBody style={{ textAlign: 'center' }}>
+                                                                    <MDBModalTitle>คุณต้องการยกเลิกอนุมัติสิทธิ ใช่หรือไม่</MDBModalTitle>
+                                                                </MDBModalBody>
+                                                                <MDBModalFooter>
+                                                                    <MDBBtn color='secondary' onClick={toggleShow_2}>
+                                                                        ยกเลิก
+                                                                    </MDBBtn>
+                                                                    <MDBBtn className='btn-danger' onClick={() => status_not_allow(val.id)}>ยกเลิกการอนุมัติสิทธิ</MDBBtn>
+                                                                </MDBModalFooter>
+                                                            </MDBModalContent>
+                                                        </MDBModalDialog>
+                                                    </MDBModal>
+
+
+
+
+
+
+<MDBBadge style={{ marginRight: "20px" }} color='danger' pill>ยังไม่ได้รับการอนุมัติ</MDBBadge>
+
+
+
+                                                    <MDBBtn onClick={toggleShow}>อนุมัติสิทธิ</MDBBtn>
+                                                    <MDBModal staticBackdrop tabIndex='-1' show={staticModal} setShow={setStaticModal}>
+                                                        <MDBModalDialog>
+                                                            <MDBModalContent>
+                                                                <MDBModalHeader>
+                                                                    <MDBBtn className='btn-close' color='none' onClick={toggleShow}></MDBBtn>
+                                                                </MDBModalHeader>
+                                                                <MDBModalBody style={{ textAlign: 'center' }}>
+                                                                    <MDBModalTitle>คุณต้องการอนุมัติสิทธิ ใช่หรือไม่</MDBModalTitle>
+                                                                </MDBModalBody>
+                                                                <MDBModalFooter>
+                                                                    <MDBBtn color='secondary' onClick={toggleShow}>
+                                                                        ยกเลิก
+                                                                    </MDBBtn>
+                                                                    <MDBBtn onClick={() => status_allow(val.id)}>อนุมัติสิทธิ</MDBBtn>
+                                                                </MDBModalFooter>
+                                                            </MDBModalContent>
+                                                        </MDBModalDialog>
+                                                    </MDBModal>
